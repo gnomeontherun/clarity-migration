@@ -26,6 +26,9 @@
             "styles": [
               "node_modules/@clr/icons/clr-icons.min.css",
               "node_modules/@clr/ui/clr-ui.min.css",
+              "node_modules/@clr/core/global.min.css",
+              "node_modules/@clr/core/styles/module.shims.min.css",
+              "node_modules/@clr/city/css/bundles/default.min.css",
               "src/styles.css"
             ],
             "scripts": [

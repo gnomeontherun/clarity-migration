@@ -1,1 +1,38 @@
-<p>alert works!</p>
+<h1>Alerts</h1>
+
+<h2>CSS Alerts</h2>
+
+<app-demo type="css">
+  <div class="alert alert-success" role="alert">
+    <div class="alert-items">
+        <div class="alert-item static">
+            <div class="alert-icon-wrapper">
+                <clr-icon class="alert-icon" shape="check-circle"></clr-icon>
+            </div>
+            <span class="alert-text">Something was successful</span>
+        </div>
+    </div>
+  </div>
+</app-demo>
+
+<app-demo type="core">
+<cds-alert-group status="success">
+  <cds-alert>Something was successful</cds-alert>
+</cds-alert-group>
+</app-demo>
+
+<h2>Angular Alerts</h2>
+
+<app-demo type="angular">
+  <clr-alert [clrAlertType]="'warning'" *ngIf="warning1" (clrAlertClosedChange)="warning1 = false">
+    <clr-alert-item>
+        <span class="alert-text">Try closing this alert.</span>
+    </clr-alert-item>
+  </clr-alert>
+</app-demo>
+
+<app-demo type="core">
+  <cds-alert-group status="warning" *ngIf="warning2">
+    <cds-alert closable="true" (closeChange)="warning2 = false">Try closing this alert</cds-alert>
+  </cds-alert-group>
+  </app-demo>

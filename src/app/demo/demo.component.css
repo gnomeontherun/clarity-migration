@@ -1,0 +1,8 @@
+.demo-container {
+  border: 1px solid var(--cds-token-color-neutral-400);
+}
+.demo-type {
+  background: var(--cds-token-color-neutral-0);
+  border: 1px solid var(--cds-token-color-neutral-400);
+  padding: 0 .5rem;
+}
