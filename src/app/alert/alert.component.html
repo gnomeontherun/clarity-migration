@@ -2,7 +2,7 @@
 
 <h2>CSS Alerts</h2>
 
-<app-demo type="css">
+<app-demo type="css" file="alert/alert.component.html" line="6">
   <div class="alert alert-success" role="alert">
     <div class="alert-items">
         <div class="alert-item static">
@@ -15,7 +15,7 @@
   </div>
 </app-demo>
 
-<app-demo type="core">
+<app-demo type="core" file="alert/alert.component.html" line="18">
 <cds-alert-group status="success">
   <cds-alert>Something was successful</cds-alert>
 </cds-alert-group>
@@ -23,7 +23,7 @@
 
 <h2>Angular Alerts</h2>
 
-<app-demo type="angular">
+<app-demo type="angular" file="alert/alert.component.html" line="26">
   <clr-alert [clrAlertType]="'warning'" *ngIf="warning1" (clrAlertClosedChange)="warning1 = false">
     <clr-alert-item>
         <span class="alert-text">Try closing this alert.</span>
@@ -31,7 +31,7 @@
   </clr-alert>
 </app-demo>
 
-<app-demo type="core">
+<app-demo type="core" file="alert/alert.component.html" line="35">
   <cds-alert-group status="warning" *ngIf="warning2">
     <cds-alert closable="true" (closeChange)="warning2 = false">Try closing this alert</cds-alert>
   </cds-alert-group>
